@@ -16,7 +16,8 @@ export default defineNuxtConfig({
 
     modules: [
         'nuxt-particles',
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
+        'nuxt-anchorscroll',
     ],
 
     routeRules: {
@@ -25,5 +26,12 @@ export default defineNuxtConfig({
         '/projects': {prerender: true},
         '/downloads': {prerender: true},
         '/dashboard': {prerender: true},
+    },
+
+    runtimeConfig: {
+        // The private keys which are only available within server-side
+        public: {
+            pocketBaseUrl: process.env.NUXT_PUBLIC_POCKETBASE_URL,
+        }
     }
 })

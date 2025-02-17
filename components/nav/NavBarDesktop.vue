@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import NavItem from "./NavItem.vue";
-import ContactButton from "~/components/ContactButton.vue";
+import ContactButton from "~/components/nav/ContactButton.vue";
 </script>
 
 <template>

@@ -3,10 +3,10 @@
   Using <a> instead if <NuxtLink> because <NuxtLink> somehow fucks everything??
   TODO: Check if there is a fix for this dumb fucking stupid thing
   -->
-  <a :href="href" class="inline-block font-bold xl:text-xl text-md nav-element transition-all mx-5 nav-link">
+  <NuxtLink :href="href" class="inline-block font-bold xl:text-xl text-md nav-element transition-all mx-5 nav-link">
     <span class="text-orange-400 font-rubik">.</span><span class="text-white font-rubik">{{ label }}</span>
     <Icon v-if="icon" :icon="icon" class="align-middle inline ml-2 text-[#c0b0dc]" :class="rotateOnHover ? 'group-hover:rotate-180 transition-transform' : ''"/>
-  </a>
+  </NuxtLink>
 </template>
 <style>
     .nav-link {
