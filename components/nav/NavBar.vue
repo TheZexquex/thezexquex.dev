@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="lg:hidden inline">
-      <NavBarMobile />
+      <NavBarMobile :page="page"/>
     </div>
     <div class="lg:inline hidden">
-      <NavBarDesktop />
+      <NavBarDesktop :page="page"/>
     </div>
   </div>
 </template>
@@ -12,19 +12,8 @@
 <script setup lang="ts">
 import NavBarMobile from "./NavBarMobile.vue";
 import NavBarDesktop from "./NavBarDesktop.vue";
+
+const props = defineProps(['page']);
 </script>
 <script lang="ts">
-export default defineComponent( {
-  data() {
-    return {
-      navbarToggled: false,
-    };
-  },
-  methods: {
-    toggleNavbar( data ) {
-      this.navbarToggled = data;
-      console.log( this.navbarToggled );
-    }
-  }
-})
 </script>

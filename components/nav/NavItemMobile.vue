@@ -1,8 +1,10 @@
 <template>
-  <a :href="href" class="block bg-opacity-50 h-fit font-uc_baloo text-2xl transition-all text-center py-8 bg-uc-accent-light rounded-2xl my-2 text-white">
-    {{ label }}
-    <Icon :icon="icon" class="align-middle inline ml-2 text-white" :class="!collapsed ? 'group-hover:rotate-180 transition-transform' : ''"/>
-  </a>
+  <div class="w-full flex justify-center items-center text-center">
+    <a :href="href" class="bg-opacity-50 h-fit font-rubik text-2xl transition-all
+  text-center justify-center py-8 bg-uc-accent-light rounded-2xl my-2 text-white">
+      {{ label }}
+    </a>
+  </div>
 </template>
 
 <script setup lang="ts">

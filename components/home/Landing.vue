@@ -6,9 +6,9 @@ const twText = ['thezexquex.dev', 'development', 'design']
 </script>
 
 <template>
-  <div class="w-full h-screen text-white text-8xl font-rubik content-center">
+  <div class="w-full h-screen text-white font-rubik content-center">
     <div class="flex justify-center">
-      <div class="flex mb-40">
+      <div class="flex mb-40 lg:text-8xl sm:text-6xl text-4xl">
         <span class="text-orange-400">.</span>
         <VueTyping
             :sentences="twText"

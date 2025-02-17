@@ -5,10 +5,10 @@ import Footer from "~/components/footer/Footer.vue";
 
 <template>
   <div>
-    <NavBar page="default"/>
+    <NavBar page="error"/>
     <NuxtParticles
         id="tsparticles"
-        url="particles/particles.json"
+        url="particles/particles-error.json"
     >
     </NuxtParticles>
     <slot/>

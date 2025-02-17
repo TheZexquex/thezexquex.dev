@@ -3,9 +3,9 @@ const props = defineProps(['label'])
 </script>
 
 <template>
-  <div class="block w-full">
-    <div class="text-[8rem] flex justify-center items-center">
-      <span class="text-orange-400 font-rubik">.</span><span class="text-white font-rubik">{{ label }}</span>
+  <div class="w-full h-fit mb-20">
+    <div class="text-9xl flex justify-center items-center h-fit">
+      <span class="text-orange-400 font-rubik h-fit">.</span><span class="text-white font-rubik h-fit">{{ label }}</span>
     </div>
   </div>
 </template>

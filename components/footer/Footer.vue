@@ -6,7 +6,7 @@ import FooterCategory from "~/components/footer/FooterCategory.vue";
 
 <template>
 <div class="bg-white h-fit p-5 w-full font-rubik font-normal text-gray-800">
-  <div class="flex justify-center">
+  <div class="flex flex-wrap">
     <FooterCategory title="legal">
       <FooterLink label="imprint" href="/terms/imprint"/>
       <FooterLink label="privacy" href="/terms/privacy"/>
